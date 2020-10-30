@@ -1,0 +1,35 @@
+.container {
+  max-width: 120rem;
+  min-height: 50rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+  &__logo {
+    height: 3.25rem;
+    margin-left: 3rem;
+  }
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 18%;
+  background-color: var(--color-grey-dark-1);
+}
+
+.hotel-view {
+  flex: 1;
+  background-color: red;
+}
