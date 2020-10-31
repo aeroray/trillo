@@ -4,6 +4,11 @@
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
@@ -14,6 +19,11 @@
   font-size: 1.4rem;
   background-color: #fff;
   border-bottom: 1px solid var(--color-grey-light-2);
+  @media only screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
   &__logo {
     height: 3.25rem;
     margin-left: 3rem;
@@ -22,6 +32,9 @@
 
 .content {
   display: flex;
+  @media only screen and (max-width: $bp-midium) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -42,6 +55,12 @@
   border-bottom: 1px solid var(--color-grey-light-2);
   background-color: var(--color-grey-light-1);
   font-size: 1.4rem;
+  @media only screen and (max-width: $bp-midium) {
+    padding: 3rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
   .description {
     flex: 0 0 60%;
     padding: 3rem;
@@ -49,6 +68,14 @@
     background-color: #fff;
     box-shadow: var(--shadow-light);
     border-radius: 1rem;
+    @media only screen and (max-width: $bp-midium) {
+      padding: 2rem;
+      margin-right: 3rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
   .reviews {
     flex: 1;

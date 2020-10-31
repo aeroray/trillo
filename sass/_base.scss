@@ -16,6 +16,13 @@
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
 }
 
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-midium: 59.375em; //950px
+$bp-small: 38.75em; //620px
+$bp-smallest: 31.25em; //500px
+$bp-xs: 25em; //400px
+
 *,
 *::before,
 *::after {
@@ -27,6 +34,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; //1rem = 8px
+  }
   body {
     min-height: 100vh;
     background-image: linear-gradient(
